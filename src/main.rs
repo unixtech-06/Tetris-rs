@@ -25,7 +25,7 @@ TetrisGame {
 	noecho();
 	curs_set(0);
 
-	let mut board = vec![vec![false; SCREEN_WIDTH]; SCREEN_HEIGHT];
+	let board = vec![vec![false; SCREEN_WIDTH]; SCREEN_HEIGHT];
 	let mut game = TetrisGame {
 	    player_x: 0,
 	    player_y: 0,

@@ -10,7 +10,8 @@ const BLOCK_SIZE: usize = 4;
 const FRAME_RATE: u64 = 100; 
 
 struct 
-TetrisGame {
+TetrisGame 
+{
     player_x: usize,
     player_y: usize,
     board: Vec<Vec<bool>>,
@@ -18,7 +19,8 @@ TetrisGame {
 }
 
 impl 
-TetrisGame {
+TetrisGame 
+{
     fn 
     new() -> TetrisGame {
 	initscr();
@@ -244,7 +246,8 @@ TetrisGame {
 }
 
 fn 
-main() {
+main() 
+{
     let mut game = TetrisGame::new();
     game.run();
     endwin();
